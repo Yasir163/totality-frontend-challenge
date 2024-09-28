@@ -1,8 +1,35 @@
-# React + Vite
+A property rental platform built with React, featuring property listings, cart management, and a checkout system. It supports filtering properties by price and location, as well as a responsive design for both desktop and mobile devices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features-
+Property Listings: Browse properties with filters for price and location.
+Cart System: Add, remove, and manage properties in your cart with total cost updates.
+Checkout: Enter booking details like name, email, address, phone and review your order before confirming.
+Responsive Design: Optimized for desktop and mobile viewing.
 
-Currently, two official plugins are available:
+Tech Stack-
+React.js: The main framework used to build the project. React's component-based architecture helps with reusable UI elements and state management.
+React Router: For handling routing and navigation between different pages such as Home, Cart, and Checkout.
+CSS: Used for styling the application and ensuring responsive design across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Libraries & Tools-
+React Router: Page navigation is managed using react-router-dom. The app contains routes for the home page, cart page, and checkout page, ensuring seamless transitions between them.
+VS Code: The primary code editor for development.
+GitHub: Used for version control and project hosting.
+Vercel: Platform used for hosting the project.
+
+
+Home Page-
+View all property listings.
+Apply filters by price and location to narrow down your search.
+Click on the "Book Now" button to add a property to the cart.
+
+Cart Page-
+View the properties added to the cart.
+Feature of removing properties from the cart.
+Fill out the booking details form.
+Look at the total bill.
+Proceed to the checkout page.
+
+Checkout Page-
+Review your booking details and the list of properties in the cart.
+Confirm your total bill.
