@@ -1,0 +1,120 @@
+.card {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #1b9c78;
+  width: 250px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px #127458;
+}
+
+.card-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: white;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  color: white;
+  margin: 10px 0;
+}
+.card-price span {
+  color: rgb(5, 40, 123);
+}
+.buy-now-btn {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0 0 5px 5px #127458;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.buy-now-btn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.buy-now-btn::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 20px 15px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.buy-now-btn:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.buy-now-btn:hover {
+  background-color: rgb(8, 49, 29);
+}

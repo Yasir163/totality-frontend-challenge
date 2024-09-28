@@ -1,0 +1,177 @@
+.home-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.property-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  flex-basis: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex-basis: calc(50% - 20px);
+}
+.filter label {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: white;
+}
+.filter-input,
+.filter-select {
+  padding: 8px 3px;
+  border: 2px solid #127458;
+  color: #127458;
+  font-size: 1.15rem;
+  outline: none;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+.cart-info {
+  color: #0e4868;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  background-color: #00ffa6;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 10px 0;
+}
+
+.cart-button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cart-button:hover {
+  box-shadow: 0 0 5px 5px #127458;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.cart-button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.cart-button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 20px 15px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.cart-button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.cart-button:hover {
+  background-color: rgb(8, 49, 29);
+}
+
+.no-properties {
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+}
+.to-hide {
+  display: hidden;
+}
+
+@media (max-width: 768px) {
+  .property-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  .cart-info {
+    text-align: center;
+    margin: 0 10px;
+  }
+}
