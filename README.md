@@ -14,6 +14,7 @@ CSS: Used for styling the application and ensuring responsive design across devi
 Libraries & Tools-
 React Router: Page navigation is managed using react-router-dom. The app contains routes for the home page, cart page, and checkout page, ensuring seamless transitions between them.
 VS Code: The primary code editor for development.
+UI Verse: used for styling buttons in this project. 
 GitHub: Used for version control and project hosting.
 Vercel: Platform used for hosting the project.
 
